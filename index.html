@@ -1,240 +1,253 @@
 <!DOCTYPE html><html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Velora - Earn. Grow. Belong.</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Velora - Earn. Grow. Belong.</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"><style>
 :root{
---bg:#070b17;
---card:rgba(255,255,255,.08);
---border:rgba(255,255,255,.12);
---text:#ffffff;
---muted:#a7b0c5;
---primary:#6d7cff;
---secondary:#25e6b3;
+  --bg:#070A12;
+  --glass:rgba(255,255,255,0.08);
+  --border:rgba(255,255,255,0.12);
+  --text:#ffffff;
+  --muted:#a8b3cf;
+  --primary:#6C7CFF;
+  --green:#2EF2A4;
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Inter',sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Inter,sans-serif;
 }
 
 body{
-background:
-radial-gradient(circle at top left,#283593 0%,transparent 35%),
-radial-gradient(circle at top right,#00c896 0%,transparent 30%),
-radial-gradient(circle at bottom,#6d7cff 0%,transparent 25%),
-var(--bg);
-color:var(--text);
-min-height:100vh;
+  background:
+  radial-gradient(circle at top left,#1b2cff33,transparent 40%),
+  radial-gradient(circle at top right,#00ffa633,transparent 35%),
+  var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
 }
 
-.nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 8%;
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
 }
 
 .logo{
-font-size:28px;
-font-weight:800;
-}
-
-.glass{
-background:var(--card);
-backdrop-filter:blur(16px);
-border:1px solid var(--border);
-border-radius:24px;
-}
-
-.hero{
-width:min(1200px,90%);
-margin:auto;
-padding:80px 40px;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-.hero h1{
-font-size:64px;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.hero p{
-color:var(--muted);
-font-size:18px;
-margin-bottom:30px;
+  font-size:24px;
+  font-weight:800;
 }
 
 .btn{
-padding:14px 24px;
-border:none;
-border-radius:14px;
-cursor:pointer;
-font-weight:700;
-text-decoration:none;
-display:inline-block;
+  padding:10px 18px;
+  border-radius:12px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  display:inline-block;
 }
 
 .primary{
-background:var(--primary);
-color:#fff;
+  background:var(--primary);
 }
 
 .secondary{
-background:transparent;
-border:1px solid var(--border);
-color:#fff;
+  border:1px solid var(--border);
+  background:transparent;
 }
 
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  padding:80px 8%;
+  align-items:center;
+}
+
+.hero h1{
+  font-size:56px;
+  line-height:1.1;
+}
+
+.hero p{
+  color:var(--muted);
+  margin:20px 0;
+}
+
+/* GLASS */
+.glass{
+  background:var(--glass);
+  border:1px solid var(--border);
+  backdrop-filter:blur(18px);
+  border-radius:20px;
+  padding:20px;
+}
+
+/* STATS */
 .stats{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
 }
 
 .stat{
-padding:25px;
-text-align:center;
+  text-align:center;
+  padding:20px;
 }
 
 .stat h3{
-font-size:32px;
-margin-bottom:8px;
+  font-size:28px;
 }
 
-.section{
-width:min(1200px,90%);
-margin:100px auto;
+/* SECTIONS */
+section{
+  padding:80px 8%;
+  text-align:center;
 }
 
-.section-title{
-text-align:center;
-font-size:42px;
-margin-bottom:15px;
+.title{
+  font-size:40px;
+  margin-bottom:10px;
 }
 
-.section-sub{
-text-align:center;
-color:var(--muted);
-margin-bottom:50px;
+.subtitle{
+  color:var(--muted);
+  margin-bottom:40px;
 }
 
+/* GRID */
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:24px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
 }
 
 .card{
-padding:30px;
+  padding:25px;
 }
 
-.card h3{
-margin-bottom:12px;
+/* INPUT */
+input{
+  padding:14px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.2);
+  background:rgba(255,255,255,0.05);
+  color:white;
+  width:260px;
+  outline:none;
 }
 
-.card p{
-color:var(--muted);
+/* FOOTER */
+footer{
+  padding:40px;
+  text-align:center;
+  color:var(--muted);
 }
+</style></head><body><!-- NAV --><nav>
+  <div class="logo">VELORA</div>
+  <div>
+    <a class="btn secondary" href="https://t.me/Nexoraofficials">Community</a>
+    <a class="btn primary" href="https://t.me/Nexoraoffcial">Join</a>
+  </div>
+</nav><!-- HERO --><div class="hero">  <div>
+    <h1>Earn Rewards.<br>Grow Together.</h1><p>
+  Velora is a Web3-inspired reward ecosystem where users complete tasks,
+  invite friends, and earn future digital rewards.
+</p>
 
-.tokenomics{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
+<a class="btn primary" href="https://t.me/Nexoraoffcial">Join Telegram</a>
+<a class="btn secondary" href="#waitlist">Join Waitlist</a>
 
-.token{
-padding:25px;
-text-align:center;
-}
+  </div>  <div class="glass"><div class="stats">
+  <div class="glass stat">
+    <h3>100%</h3>
+    <p>Free</p>
+  </div>
 
-.footer{
-padding:50px;
-text-align:center;
-color:var(--muted);
-}
+  <div class="glass stat">
+    <h3>∞</h3>
+    <p>Growth</p>
+  </div>
 
-@media(max-width:900px){
-.hero{
-grid-template-columns:1fr;
-padding:40px 20px;
-}
-.hero h1{
-font-size:42px;
-}
-}
-</style></head><body><nav class="nav">
-<div class="logo">VELORA</div>
-<div>
-<a class="btn secondary" href="https://t.me/Nexoraofficials">Community</a>
+  <div class="glass stat">
+    <h3>24/7</h3>
+    <p>Active</p>
+  </div>
+
+  <div class="glass stat">
+    <h3>2026</h3>
+    <p>Launch</p>
+  </div>
 </div>
-</nav><section class="hero glass"><div>
-<h1>Earn Rewards.<br>Grow Together.</h1><p>
-Velora is a next-generation rewards ecosystem where users complete tasks,
-invite friends, earn points and unlock future opportunities.
-</p><a href="https://t.me/Nexoraofficials" class="btn primary">Join Community</a>
-<a href="https://t.me/Nexoraoffcial" class="btn secondary">Announcements</a>
 
-</div><div class="stats">
-<div class="glass stat">
-<h3>100%</h3>
-<p>Free To Join</p>
-</div><div class="glass stat">
-<h3>24/7</h3>
-<p>Community Driven</p>
-</div><div class="glass stat">
-<h3>∞</h3>
-<p>Growth Potential</p>
-</div><div class="glass stat">
-<h3>2026</h3>
-<p>Early Access</p>
+  </div>
+</div><!-- HOW --><section>
+  <h2 class="title">How It Works</h2>
+  <p class="subtitle">Simple steps to earn rewards</p>  <div class="grid"><div class="glass card">
+  <h3>Sign Up</h3>
+  <p>Create your free account</p>
 </div>
-</div></section><section class="section"><h2 class="section-title">How Velora Works</h2>
-<p class="section-sub">
-Simple actions. Real rewards.
-</p><div class="grid"><div class="glass card">
-<h3>Create Account</h3>
-<p>Join the ecosystem and start building your profile.</p>
-</div><div class="glass card">
-<h3>Complete Tasks</h3>
-<p>Participate in campaigns and community activities.</p>
-</div><div class="glass card">
-<h3>Earn Points</h3>
-<p>Collect points and climb the leaderboard.</p>
-</div><div class="glass card">
-<h3>Unlock Rewards</h3>
-<p>Gain access to future ecosystem benefits.</p>
-</div></div></section><section class="section"><h2 class="section-title">Tokenomics Preview</h2>
-<p class="section-sub">
-Future ecosystem allocation model.
-</p><div class="tokenomics"><div class="glass token">
-<h3>45%</h3>
-<p>Community Rewards</p>
-</div><div class="glass token">
-<h3>20%</h3>
-<p>Liquidity</p>
-</div><div class="glass token">
-<h3>15%</h3>
-<p>Ecosystem Growth</p>
-</div><div class="glass token">
-<h3>10%</h3>
-<p>Marketing</p>
-</div><div class="glass token">
-<h3>10%</h3>
-<p>Team Allocation</p>
-</div></div></section><section class="section"><h2 class="section-title">Join Early</h2><div class="glass card" style="max-width:700px;margin:auto;text-align:center;">
-<h3>Become an Early Member</h3>
-<p style="margin:15px 0;">
-Join our community and follow the project's growth journey.
-</p><a href="https://t.me/Nexoraofficials" class="btn primary">Join Telegram</a>
 
-</div></section><footer class="footer">
-© 2026 Velora. Earn. Grow. Belong.
+<div class="glass card">
+  <h3>Complete Tasks</h3>
+  <p>Engage with platform tasks</p>
+</div>
+
+<div class="glass card">
+  <h3>Earn Points</h3>
+  <p>Collect reward points</p>
+</div>
+
+<div class="glass card">
+  <h3>Future Rewards</h3>
+  <p>Unlock ecosystem benefits</p>
+</div>
+
+  </div>
+</section><!-- WAITLIST --><section id="waitlist">
+  <h2 class="title">Get Early Access</h2>
+  <p class="subtitle">
+    Join the waitlist and become an early user of Velora
+  </p>  <form action="https://formspree.io/f/mgojvjoe" method="POST"><input 
+  type="email"
+  name="email"
+  placeholder="Enter your email"
+  required
+/>
+
+<button class="btn primary" type="submit">
+  Join Waitlist
+</button>
+
+  </form>  <p style="margin-top:20px; color:#a8b3cf; font-size:13px;">
+    No spam. Only important updates.
+  </p>
+</section><!-- TOKEN --><section>
+  <h2 class="title">Token Vision</h2>  <div class="grid"><div class="glass card">
+  <h3>Community</h3>
+  <p>45% Rewards pool</p>
+</div>
+
+<div class="glass card">
+  <h3>Liquidity</h3>
+  <p>20% ecosystem support</p>
+</div>
+
+<div class="glass card">
+  <h3>Growth</h3>
+  <p>15% expansion</p>
+</div>
+
+  </div>
+</section><!-- CTA --><section>
+  <h2 class="title">Join The Movement</h2><a class="btn primary" href="https://t.me/Nexoraoffcial">Join Telegram</a>
+
+</section><footer>
+  © 2026 Velora. All rights reserved.
 </footer></body>
 </html>
